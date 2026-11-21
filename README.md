@@ -12,3 +12,8 @@
 ### 3. Badge status
 <img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/a1b4ee17-0f7b-43e6-838b-59c7ac5d7764" />
 
+## Bonus: uji jalankan stack
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/132e0e27-e016-4740-b1be-60d4ba3cea58" />
+Workflow juga menjalankan `docker compose up -d`, `docker compose ps`, 
+lalu `docker compose down -v` di runner GitHub untuk memastikan 
+WordPress dan MariaDB benar-benar bisa berjalan.
