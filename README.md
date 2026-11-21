@@ -9,6 +9,6 @@
 ### 2. Pull Request dengan check gagal (merah)
 <img width="959" height="539" alt="Screenshot 2026-11-21 154054" src="https://github.com/user-attachments/assets/246dec92-b5bf-47a0-8b40-200416b303a6" />
 
-
 ### 3. Badge status
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/a1b4ee17-0f7b-43e6-838b-59c7ac5d7764" />
 
