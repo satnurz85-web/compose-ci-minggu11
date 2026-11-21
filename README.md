@@ -4,10 +4,10 @@ Stack WordPress + MariaDB dengan CI GitHub Actions. Workflow 'compose-check.yml'
 
 ## Cara menjalankan
 
-'''
+```
 cp .env.example .env
 docker compose up -d
-'''
+```
 
 Buka http://localhost:8080. Ganti kata sandi di '.env' sebelum dipakai. Untuk mematikan: 'docker compose down'.
 
