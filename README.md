@@ -17,3 +17,8 @@
 Workflow juga menjalankan 'docker compose up -d', 'docker compose ps', 
 lalu 'docker compose down -v' di runner GitHub untuk memastikan 
 WordPress dan MariaDB benar-benar bisa berjalan.
+
+### Bukti run hijau setelah bonus
+<img width="959" height="536" alt="image" src="https://github.com/user-attachments/assets/aac904e5-8b7b-413e-b009-e3978d336857" />
+Semua run di branch main berstatus hijau, termasuk run setelah
+step 'docker compose up -d', 'docker compose ps', dan 'docker compose down -v' ditambahkan.
