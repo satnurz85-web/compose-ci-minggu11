@@ -17,3 +17,13 @@ jobs:
 
       - name: Validasi file Compose
         run: docker compose config -q
+
+      - name: Jalankan stack
+        run: docker compose up -d
+
+      - name: Cek status container
+        run: docker compose ps
+
+      - name: Matikan stack
+        if: always()
+        run: docker compose down -v
