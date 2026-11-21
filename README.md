@@ -1,26 +1,31 @@
-# compose-ci-minggu11
-
 ![CI](https://github.com/satnurz85-web/compose-ci-minggu11/actions/workflows/compose-check.yml/badge.svg)
+
+Stack WordPress + MariaDB dengan CI GitHub Actions. Workflow 'compose-check.yml' memvalidasi 'docker-compose.yml' setiap push ke 'main' dan setiap Pull Request.
+
+## Cara menjalankan
+
+'''
+cp .env.example .env
+docker compose up -d
+'''
+
+Buka http://localhost:8080. Ganti kata sandi di '.env' sebelum dipakai. Untuk mematikan: 'docker compose down'.
+
 ## Bukti
 
-### 1. Tab Actions dengan run hijau 
-<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/f6d633a0-e34e-4c2d-bc26-e6152cfe3b2e" />
+### 1. Tab Actions dengan run hijau
+![Actions hijau](docs/01-actions-hijau.png)
 
-### 2. Pull Request dengan check gagal (merah)
-<img width="959" height="539" alt="Screenshot 2026-11-21 154054" src="https://github.com/user-attachments/assets/246dec92-b5bf-47a0-8b40-200416b303a6" />
+### 2. Detail job validate
+![Detail job](docs/02-detail-job.png)
 
-### 3. Badge status
-<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/a1b4ee17-0f7b-43e6-838b-59c7ac5d7764" />
+### 3. Halaman repo dan badge
+![Repo dan badge](docs/03-repo-badge.png)
 
-## Bonus: uji jalankan stack
-<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/132e0e27-e016-4740-b1be-60d4ba3cea58" />
+## Bonus
 
-Workflow juga menjalankan 'docker compose up -d', 'docker compose ps', 
-lalu 'docker compose down -v' di runner GitHub untuk memastikan 
-WordPress dan MariaDB benar-benar bisa berjalan.
+Run merah dibuat dengan sengaja di Pull Request #1 (indentasi 'docker-compose.yml' dirusak), lalu diperbaiki sampai hijau dan di-merge. Workflow juga menjalankan 'docker compose up -d', 'ps', dan 'down -v'.
 
-### Bukti run hijau setelah bonus
-<img width="959" height="536" alt="image" src="https://github.com/user-attachments/assets/aac904e5-8b7b-413e-b009-e3978d336857" />
+## Sumber bantuan
 
-Semua run di branch main berstatus hijau, termasuk run setelah
-step 'docker compose up -d', 'docker compose ps', dan 'docker compose down -v' ditambahkan.
+Dibantu Claude (AI) untuk panduan langkah dan penyusunan laporan. Semua perintah saya jalankan sendiri.
